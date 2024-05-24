@@ -1,10 +1,11 @@
 .data
 numsize:  .word 13
-number:   .word 5, 6, 8, 4, 2, -1, 20, 1531, 5132132, -5, 2147483647, 325, -521,56788985335
+number:   .word 5, 6, 8, 4, 2, -1, 20, 1531, 5132132, -5, 2147483647, 325, -521
 bfstr:    .string "Before sorting "
 afstr:    .string "After sorting "
 space:    .string " "
 nextline: .string "\n"
+
 .text
 main:
     # print bfstr
@@ -169,3 +170,5 @@ PrintLoop:
     addi a7, x0, 4        # a7 = 4 print_str
     ecall
     jr ra    
+    ebreak
+    

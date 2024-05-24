@@ -10,7 +10,6 @@ main:
         mv a0, a0             # integer to print
         li a7, 36              # print int environment call (1)
         ecall                 # print int environment call
-        
         # exit
         li a7, 10             # exit environment call id (10)
         ecall                 # exit environment call
